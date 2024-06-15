@@ -136,7 +136,7 @@ function generatedTimeEveryAfterEveryOneMinForRollet() {
   let job = schedule.scheduleJob("* * * * * *", async function () {
     io.emit("oneminrollet", second); // Emit the formatted time
     console.log(second);
-    if (second === 10) {
+    if (second === 5) {
       try {
         const res = await axios.get(
           `https://admin.sunlottery.fun/api/roulette-result`
