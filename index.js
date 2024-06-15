@@ -139,7 +139,7 @@ function generatedTimeEveryAfterEveryOneMinForRollet() {
     if (second === 5) {
       try {
         const res = await axios.get(
-          `https://admin.sunlottery.fun/api/roulette-result`
+          `https://web.vegusgain.com/api/roulette-result`
         );
         result = res?.data;
       } catch (e) {
